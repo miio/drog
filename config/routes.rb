@@ -1,4 +1,12 @@
 Drog::Application.routes.draw do
+  devise_for :users
+
+  resources :categories
+
+  resources :comments
+
+  resources :articles
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
