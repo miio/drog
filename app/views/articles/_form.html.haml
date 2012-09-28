@@ -5,6 +5,17 @@
       %ul
         - @article.errors.full_messages.each do |msg|
           %li= msg
-
   .actions
+    %p
+      = f.label :title
+      = f.text_field :title
+    %p
+      = f.label :body
+      = jencil_text_area 'article', :body
+    %p
+      = f.label :created_at
+      = f.datetime_select :created_at
+    %p
+      = f.label :updated_at
+      = f.datetime_select :updated_at
     = f.submit 'Save'
