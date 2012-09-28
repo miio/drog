@@ -18,9 +18,29 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'haml-rails'
+  gem 'sass-rails-bootstrap'
+  gem 'bootstrap-sass'
+  gem 'jquery-ui-rails'
+  gem 'jencil-rails'
+end
+
+group :development do
+  gem 'erd'
 end
 
 gem 'jquery-rails'
+
+gem 'devise'
+gem 'inherited_resources'
+
+gem 'validates_timeliness', '~> 3.0'
+gem 'rails3_acts_as_paranoid'
+gem 'cells'
+gem 'active_decorator'
+gem 'kaminari'
+gem 'acts-as-taggable-on'
+gem 'activeadmin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
