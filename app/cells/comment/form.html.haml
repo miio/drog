@@ -1,0 +1,5 @@
+%p
+  Comment Form
+= form_for [@comment.article, @comment] do |f|
+  = jencil_text_area 'comment', :body
+  = submit_tag("Post")
