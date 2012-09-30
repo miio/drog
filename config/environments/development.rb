@@ -34,4 +34,9 @@ Drog::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.assets.logger = false
+
+  ActiveRecord::Base.logger = Logger.new("log/development_database.log")
+  ActiveRecord::Base.logger.level = 0
 end

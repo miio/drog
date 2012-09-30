@@ -27,6 +27,7 @@ end
 
 group :development do
   gem 'erd'
+  gem 'thin'
 end
 
 gem 'jquery-rails'
