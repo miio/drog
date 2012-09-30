@@ -3,9 +3,9 @@ Drog::Application.routes.draw do
 
   resources :categories
 
-  resources :comments
-
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

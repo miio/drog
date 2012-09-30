@@ -5,6 +5,10 @@
   = @article.edit_link
   = @article.destroy_link
 %hr
+  %ul
+    - @article.tag_list.each do |tag|
+      %li= tag
+%hr
 = render_cell :comment, :list, article: @article
 = render_cell :comment, :form, article: @article
 %hr
