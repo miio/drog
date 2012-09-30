@@ -5,6 +5,7 @@ class Article < ActiveRecord::Base
   belongs_to :category
   has_many :comments
   validates_presence_of :author
+  paginates_per 5
 
   def save
     write_attribute('author', current_user) if respond_to?(:author) && author.nil?
